@@ -1,0 +1,404 @@
+/*
+ Theme Name:   Ruben Wellness Coach
+ Theme URI:
+ Description:  A custom theme for Ruben Gutierrez's Wellness Coaching site.
+ Author:       Martin Arroyo
+ Author URI:
+ Template:     blossom-coach
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain:  rubenwellnesscoach
+*/
+
+
+/*==========================
+
+HEADER
+
+===================================*/
+
+.main-header .site-branding {
+    display: block;
+    vertical-align: middle;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.menu-main-menu-container{
+  float: left;
+  margin-left: -1em;
+}
+
+#menu-social-wrap{
+  overflow: hidden;
+  display: contents;
+}
+#site-navigation{
+  float: left;
+}
+.social-media{
+  padding: 2em;
+}
+
+
+/*============================================
+
+COLOR SCHEME
+
+Primary: #ffb944 (hover for nav and header)
+Secondary: #32373c
+Hover: #f29e11
+
+============================================**/
+
+
+/** Service Section **/
+/* Service Background */
+section.service-section{
+    background: #ffb944 ;
+}
+/* Service Icons */
+.widget_bttk_icon_text_widget .icon-holder {
+    font-size: 2.77em;
+    color: #f3fdfed9;
+    line-height: 1;
+    width: 70px;
+    height: auto;
+}
+
+/* CTA Button */
+.btn-cta {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 25px;
+    background: #f29e11;
+    border-radius: 5px;
+    color: #111;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px;
+}
+/* CTA Section */
+.right.text{
+  background: #ffb944 !important;
+}
+/** Section Dividers **/
+/* Lines */
+section[class*="-section"] .widget .widget-title span:before,
+section[class*="-section"] .widget_blossomtheme_featured_page_widget .section-subtitle span:before,
+.section-title span:before,
+section[class*="-section"] .widget .widget-title span:after,
+section[class*="-section"] .widget_blossomtheme_featured_page_widget .section-subtitle span:after,
+.section-title span:after{
+  background: #ffb944;
+}
+/* Middle dot */
+section[class*="-section"] .widget .widget-title:after,
+section[class*="-section"] .widget_blossomtheme_featured_page_widget .section-subtitle:after,
+.section-title:after {
+  background: #111;
+}
+/* Hover in service section */
+section[class*="-section"] .widget_bttk_icon_text_widget:hover{
+    background: #f29e11;
+}
+
+
+/*** Submit button (Newsletter) ***/
+.banner-caption .blossomthemes-email-newsletter-wrapper form input[type="submit"] {
+  background: #ffb944;
+}
+/** Submit button (hover) **/
+.banner-caption .blossomthemes-email-newsletter-wrapper form input[type="submit"]:hover {
+    background: #f29e11;
+}
+
+/** Menu button (Mobile) **/
+button, input[type="button"], input[type="reset"], input[type="submit"]{
+  background: #ffb944;
+}
+/** Menu navigation (Active page)**/
+.main-navigation ul li:hover>a, .main-navigation ul li.current-menu-item>a, .main-navigation ul li.current_page_item>a{
+  color: #ffb944;
+}
+/* Close menu (mobile) */
+button:hover, input[type="button"]:hover,
+input[type="reset"]:hover, input[type="submit"]:hover{
+  background: #ffb944;
+}
+/* Back to top arrow */
+.back-to-top {
+  background: #ffb944;
+}
+/* Back to top arrow hover */
+.back-to-top:hover {
+    background: #f29e11;
+}
+/** Links **/
+/* Read More **/
+.btn-readmore {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #ffb944;
+    display: inline-block;
+    padding: 13px 65px 13px 30px;
+    border: 2px solid #ffb944;
+    border-radius: 40px;
+    line-height: 1.3;
+    position: relative;
+    text-transform: capitalize;
+    box-shadow: 0 0 0 transparent;
+}
+
+.btn-readmore:hover,
+#secondary .widget_bttk_image_text_widget a.btn-readmore:hover {
+    background: #f29e11;
+    color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.16);
+}
+.btn-readmore:after {
+    content: "\2794";
+    background: #ffb944;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 185, 68);
+  }
+/* Read more link (unclicked and hover) */
+  .btn-link, .btn-link:after{
+      color: #ffb944;
+  }
+  .btn-link:hover{
+    color: #f29e11;
+}
+
+.btn-link:hover:after {
+    background: #f29e11;
+    border-color: #f29e11;
+    color: #fff;
+}
+/* Hover for social media links */
+ul.social-icons li a:hover {
+      color: #ffb944;
+}
+/* Footer links */
+.bottom-footer a {
+    color: #ffb944;
+}
+/* Comments Section */
+.comments-area .comments-title:after, .comment-respond .comment-reply-title:after {
+    background: #f29e11; /* Line */
+}
+.comments-area .comments-title:before, .comment-respond .comment-reply-title:before {
+    background: #32373c;/* Dot */
+}
+/* Blog Meta Section */
+#secondary .widget-title:after, .site-footer .widget-title:after {
+    background: #f29e11;/* Line */
+}
+#secondary .widget-title:before, .site-footer .widget-title:before {
+    background: #32373c;/* Dot */
+}
+/* Search button */
+.search-form>label[for="submit-field"] {
+    background: #f29e11;
+}
+
+
+
+/*==========================================
+
+RESPONSIVE
+
+============================================*/
+
+/** MOBILE PHONES **/
+@media screen and (max-width: 640px) {
+    .site-branding{
+        position:relative;
+        margin-bottom:2em;
+    }
+    .main-navigation{
+        position: relative;
+        margin-top: -100px;
+    }
+
+    /* Site title and description */
+    h1.site-title, p.site-title {
+      font-size: 2em;
+    }
+    p.site-description{
+      font-size: .70em;
+    }
+    /* Social Media Icons */
+    .social-media{
+        position: absolute;
+        margin-top: 2em;
+        margin-left: -2.25em;
+    }
+    /* Navigation Menu */
+    .main-navigation button.toggle-button {
+    display: block;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 3.75em;
+    }
+    /* Sidebars */
+
+    .rightsidebar #secondary, .leftsidebar #secondary {
+      float: none;
+      width: 100%;
+      /* margin-top: 4em; */
+      /* width: 50%; */
+      display: contents;
+    }
+
+    .rightsidebar #primary, .leftsidebar #primary {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px;
+    padding-left: .5em;
+  }
+
+  .widget {
+    margin: 2em .5em 0; /* Aligns the sidebar widget on mobile display */
+    /* Make sure select elements fit in widgets. */
+  }
+
+  /* CTA Section (Front Page) */
+  #blossomtheme_companion_cta_widget-3{
+    margin: 0;
+  }
+  /*Forms*/
+  div.wpforms-container-full .wpforms-form .wpforms-field {
+     clear: both;
+     width: 97.5%;
+  }
+  /* CTA Section (Front Page) */
+  .widget.widget_blossomtheme_companion_cta_widget{
+    margin: 0px;
+  }
+}
+
+/** TABLET **/
+@media screen and (min-width:641px) and (max-width: 1024px) {
+
+/* SOCIAL MEDIA ICONS (LEFT OF HAMBURGER MENU)*/
+.social-media{
+       position: absolute;
+       margin-left: 29em;
+   }
+   /* Sidebars */
+
+   .rightsidebar #secondary, .leftsidebar #secondary {
+     float: none;
+     width: 100%;
+     /* margin-top: 4em; */
+     /* width: 50%; */
+     padding: 1em;
+     display: contents;
+   }
+
+   .rightsidebar #primary, .leftsidebar #primary {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 60px;
+    padding-left: 1.25em;
+  }
+  div.wpforms-container-full .wpforms-form .wpforms-field {
+	  /* padding: 0 .25em 1em 0;*/
+	   clear: both;
+     width: 97.5%;
+  }
+
+  .widget {
+    margin: 2em 1em 0; /* Aligns the sidebar widget on tablet display */
+    /* Make sure select elements fit in widgets. */
+  }
+
+  /* CTA Section (Front Page) */
+  .widget.widget_blossomtheme_companion_cta_widget{
+    margin: 0px;
+  }
+}
+/*===================================
+
+Pages
+
+====================================*/
+/* Right sidebar */
+.rightsidebar #primary,
+.rightsidebar #secondary,
+.leftsidebar #secondary,
+.bottom-footer {
+    background-color: white;
+}
+.rightsidebar #secondary, .leftsidebar #secondary {
+    float: left;
+    width: 25%;
+    padding: 1.5em;
+}
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+/*Blog*/
+.grid-view .site-main {
+    margin-left: 1em;
+}
+/* Content */
+.rightsidebar #primary, .rightsidebar #secondary, .leftsidebar #secondary, .bottom-footer {
+    background-color: white;
+    padding: 2em;
+}
+/*
+.page-content, .entry-content, .entry-summary{
+    margin: 1.5em 0 0;
+    padding: 1em 1em;
+}
+h1.entry-title{
+    margin-left: .5em;
+}*/
+/* Service */
+/* Quote */
+blockquote:before,
+q:before {
+    content: "\201c";
+    font-weight: 400;
+    font-size: 90px;
+    color: #fff;
+    line-height: 1;
+    width: 60px;
+    height: 60px;
+    background: #f29e11;
+    border-radius: 100%;
+    position: absolute;
+    top: -.75em;
+    left: 0px;
+    text-align: center;
+    padding: 10px 7px 0 5px;
+}
+
+blockquote:after,
+q:after {
+    content: close-quote;
+    background: #ffb944;
+    height: calc(100% - 80px);
+    width: 4px;
+    position: absolute;
+    top: 3.5em;
+    left: 12em;
+}
