@@ -25,6 +25,7 @@
     do_action( 'blossom_coach_before_wp_head' );
 
     wp_head(); ?>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b5fdb8b55cd95ade402f985a9/168ac44ab55cb7fe2e1e250eb.js");</script>
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
@@ -50,7 +51,7 @@
         <div class="main-header">
 			       <div class="wrapper">
                 <?php
-                  $site_title = get_bloginfo( 'name' ); 
+                  $site_title = get_bloginfo( 'name' );
                   $site_description = get_bloginfo( 'description', 'display' );
                   $header_text    = get_theme_mod( 'header_text', 1 );
                   if( has_custom_logo() || $site_title || $site_description || $header_text ) :

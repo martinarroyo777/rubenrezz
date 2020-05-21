@@ -15,8 +15,8 @@ if( $ed_banner == 'static_nl_banner' && has_custom_header() ){ ?>
     <div id="banner_section" class="site-banner<?php if( has_header_video() ) echo esc_attr( ' video-banner' ); ?>">
         <?php
             the_custom_header_markup();
-            //get_header();
-            if( blossom_coach_is_btnw_activated() && $banner_newsletter && has_shortcode( $banner_newsletter, 'BTEN' ) ){
+            //get_header(); // has_shortcode checked for banner_newsletter and BTEN before
+            if( blossom_coach_is_btnw_activated() && $banner_newsletter && has_shortcode( $banner_newsletter, 'mc4wp_form' ) ){
                 echo '<div class="banner-caption"><div class="wrapper">';
                 echo do_shortcode( wp_kses_post( $banner_newsletter ) );
                 echo '</div></div>';
