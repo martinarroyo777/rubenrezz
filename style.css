@@ -443,3 +443,26 @@ q:after {
     top: 3.5em;
     left: 12em;
 }
+
+/* Typography */
+
+.mc4wp-form h2 {
+    color: white;
+    font-family:'Press Start 2P';
+}
+.mc4wp-form p,
+.text-holder,
+.name,
+.designation,
+.mc4wp-form-fields,
+a {
+  font-family:'Ubuntu';
+}
+h2.widget-title, h2.section-title, .site-title a {
+  font-family:'Quantico' !important;
+}
+p.site-description{
+  color:#949090;
+  font-family:'Ubuntu';
+  font-weight:300;
+}

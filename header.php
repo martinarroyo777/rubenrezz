@@ -26,6 +26,7 @@
 
     wp_head(); ?>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b5fdb8b55cd95ade402f985a9/168ac44ab55cb7fe2e1e250eb.js");</script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quantico:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?> itemscope itemtype="http://schema.org/WebPage">
