@@ -60,7 +60,7 @@ Hover: #f29e11
     padding: 1rem 2.5rem 2rem;
     background-color: #ffb944b8;
     width: 50%;
-    height: 22rem;
+    height: auto;
     position: relative;
     left: 50%;
     top: auto;
@@ -116,11 +116,23 @@ section[class*="-section"] .widget_blossomtheme_featured_page_widget .section-su
 .section-title:after {
   background: #111;
 }
+
+/* ==================== Service ============================================= */
+/* Service Icons and Description holder */
+section[class*="-section"] .widget_bttk_icon_text_widget {
+    margin-bottom: 0;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #f29e11c2;
+    -webkit-transition: all ease 0.35s;
+    -moz-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+}
 /* Hover in service section */
 section[class*="-section"] .widget_bttk_icon_text_widget:hover{
     background: #f29e11;
 }
-
+/* ======================================================================== */
 
 /*** Submit button (Newsletter) ***/
 .banner-caption .blossomthemes-email-newsletter-wrapper form input[type="submit"] {
@@ -152,10 +164,40 @@ input[type="reset"]:hover, input[type="submit"]:hover{
 .back-to-top:hover {
     background: #f29e11;
 }
+
+/* =============== Testimonials ================================= */
+
+/* Quotation marks */
+.widget_bttk_testimonial_widget .bttk-testimonial-holder:before {
+ content: "\201C";
+ font-size: -webkit-xxx-large;
+ position: absolute;
+ top: 6rem;
+ left: 1rem;
+ color: #ffb944;
+}
+.widget_bttk_testimonial_widget .bttk-testimonial-holder:after {
+ content: "\201D";
+ font-size: -webkit-xxx-large;
+ position: absolute;
+ bottom: -1rem;
+ right: 1rem;
+ color: #ffb944;
+}
+/* Testimonial Holder */
+.widget_bttk_testimonial_widget .bttk-testimonial-holder {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 65px 30px 30px 30px;
+}
+/* ================================================== */
+
 /** Links **/
 /* Read More **/
 .btn-readmore {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Ubuntu';
     font-size: 16px;
     color: #ffb944;
     display: inline-block;
@@ -311,10 +353,11 @@ RESPONSIVE
       border-style: none;
       border-radius: 10px;
       border-color: #ffb944b8;
-      padding: 1rem 2.5rem 2rem;
+      /* padding: 1rem 2.5rem 2rem; */
+      padding: 0 2.5rem;
       background-color: #ffb944b8;
       width: auto;
-      height: 22rem;
+      height: auto;
       position: inherit;
       left: 50%;
       top: auto;
@@ -458,7 +501,7 @@ q:after {
 a {
   font-family:'Ubuntu';
 }
-h2.widget-title, h2.section-title, .site-title a {
+h2.widget-title, h2.section-title, .site-title {
   font-family:'Quantico' !important;
 }
 p.site-description{
